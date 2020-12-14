@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="305.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.ups.edu.vista.VentanaRetirarVehiculo">
+   <children>
+      <Button fx:id="btnRetirar" layoutX="175.0" layoutY="253.0" mnemonicParsing="false" onAction="#EventoRetirar" style="-fx-background-radius: 100Px;" text="Retirar" textFill="#1a1818" />
+      <TextField fx:id="txtPlaca" alignment="CENTER" layoutX="78.0" layoutY="73.0" promptText="Placa" style="-fx-background-radius: 100Px;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="121.0" layoutY="29.0" text="Retirar Vehiculo">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAtras" layoutX="121.0" layoutY="253.0" mnemonicParsing="false" onAction="#EventoAtras" style="-fx-background-radius: 100Px;" text="Atras" textFill="#1a1818" />
+      <TextField fx:id="txtHoraEntrada" alignment="TOP_LEFT" layoutX="78.0" layoutY="111.0" promptText="Hora Entrada" style="-fx-background-radius: 100Px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtValorAPagar" alignment="CENTER" layoutX="90.0" layoutY="200.0" prefHeight="30.0" prefWidth="147.0" promptText="Valor a pagar" style="-fx-background-radius: 100Px;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="73.0" layoutY="202.0" text="\$">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="pickerCalendar" layoutX="88.0" layoutY="156.0" />
+      <Button fx:id="btnBuscar" layoutX="270.0" layoutY="75.0" mnemonicParsing="false" onAction="#EventoBuscar" style="-fx-background-radius: 100Px;" text="Buscar" textFill="#1a1818" />
+      <Button fx:id="btnCalcular" layoutX="241.0" layoutY="202.0" mnemonicParsing="false" onAction="#EventoCalcular" style="-fx-background-radius: 100Px;" text="Calcular" textFill="#1a1818" />
+   </children>
+</AnchorPane>
